@@ -1,0 +1,81 @@
+.App {
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.ToursHead{
+  letter-spacing: 1.1px;
+  position: relative;
+  width: fit-content;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ToursHead::after{
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 3px;
+    left: -5%;
+    top: 114%;
+    background-color: white;
+    z-index: 5;
+}
+.Tour{
+  background-color: white;
+  width: 30vw;
+  margin:10px;
+}
+.Text{
+  padding:50px 40px;
+}
+.Heading{
+  display: flex;
+  align-items: center  ;
+  align-content: center;
+  justify-content: space-between;
+}
+.Tour img{
+  width: 30vw;
+  height: 200px;
+  
+}
+
+.Heading h3{
+  background-color:cornflowerblue;
+  padding: 5px;
+  border-radius: 4px;
+  color: rgb(47, 105, 212);
+}
+.show{
+  color: rgb(47, 105, 212);
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.show:hover{
+  cursor: pointer;
+}
+.delete{
+  background-color: transparent;
+  color: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  padding: 10px;
+  transition: 0.3s;
+}
+.delete:hover{
+  background-color: red;
+  color: white;
+}
+.refresh{
+  background-color: rgb(47, 105, 212);
+  color: white;
+  padding: 10px;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
